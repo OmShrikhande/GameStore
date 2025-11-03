@@ -1,0 +1,28 @@
+GET http://localhost:5289/games
+
+###
+GET http://localhost:5289/games/1
+###
+POST http://localhost:5289/games
+Content-Type: application/json
+
+{
+    "name": "Code Quest",
+    "gener": "Puzzle",
+    "price": 29.99,
+    "releaseDate": "2024-05-20"
+}
+
+###
+PUT http://localhost:5289/games/1
+Content-Type: application/json
+
+{
+    "name": "The Legend of Code",
+    "gener": "Adventure",
+    "price": 499,
+    "releaseDate": "2024-12-01"
+}
+
+###
+DELETE http://localhost:5289/games/4
